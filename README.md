@@ -1,36 +1,38 @@
+# Linguagens e biliotecas usadas
+Foi usado a linguagem Python e o Jupyter Notebook. Foram utilizadas as bibliotecas pandas, seaborn e statistics.
 # Tratamento tempo
 
-Na tabela tempo.csv podemos observar algums problemas que precisão passar por um tratamento.
+No arquivo tempo.csv, podemos observar alguns problemas que precisam passar por um tratamento.
 <img src="imagens/image.png"/>
 
 # Coluna Aparencia
-Inicialemnte comecei importando a tabela e salvando ela na variavel dataset. Logo em seguinda usei dataset.head() para vizualizar a tabela.
+Inicialmente, comecei importando a tabela e salvando-a na variável 'dataset'. Em seguida, utilizei 'dataset.head()' para visualizar a tabela.
 <img src="imagens/image-1.png"/>
-Logo após iniciei o tratamento pela coluna Aparencia. Usei as funçoes groupby() e a size() para agrupar os resultados da coluna e a quantiade. Pode notar que a estava com um resultado diferente que seria o resultado menos.
+Posteriormente, iniciei o tratamento pela coluna 'Aparência'. Utilizei as funções 'groupby()' e 'size()' para agrupar os resultados da coluna e a quantidade. Notei que o resultado estava diferente, deveria ser menor.
 <img src="imagens/image-2.png"/>
-Então tive que colocar esse resultado em sol.
+Então, tive que corrigir esse resultado e atribuí-lo à variável 'sol'.
 <img src="imagens/image-3.png"/>
-Mais a frente do processo percebi que existia valores númericos salvos na coluna, então iniciei a alteração para o valor sol.
+Mais adiante no processo, percebi que existiam valores numéricos salvos na coluna. Iniciei a alteração desses valores para 'sol'.
 <img src="imagens/image-9.png"/>
 
 # Coluna Umidade
-Na coluna umidade percebi que usando a função groupby() e size() que existia um valor acima de 130, excedia o valor pedido.
+Na coluna 'Umidade', percebi, utilizando as funções 'groupby()' e 'size()', que havia um valor acima de 130, excedendo o valor esperado.
 <img src="imagens/image-4.png"/>
-Também usei a função boxplot da biblioteca statistics para pdoer ver a mediana e os quartis.
+Também utilizei a função 'boxplot' da biblioteca 'statistics' para visualizar a mediana e os quartis.
 <img src="imagens/image-5.png"/>
-Então usei a função loc para poder ver o valor que passava de 130. Em seguida calculei a mediana e usei a função loc novamente para poder definir o novo valor.
+Em seguida, utilizei a função 'loc' para verificar o valor que estava acima de 130. Calculei a mediana e utilizei novamente a função 'loc' para definir o novo valor.
 <img src="imagens/image-6.png"/>
 
 # Coluna Temperatura
-Para a coluna fiz os mesmos procedimentos. Verifiquei se tinha algum valor fora do padrão e usei a função loc para definir o valor de acordo com a mediana
+Para a coluna 'Temperatura', realizei os mesmos procedimentos. Verifiquei se havia algum valor fora do padrão e utilizei a função 'loc' para definir o valor de acordo com a mediana.
 <img src="imagens/image-7.png"/>
-Depois analisei de novo a tabela e pode ver que o existia um valor null. Então calculei a mediana e definir o novo valor como a mediana.
+Posteriormente, analisei novamente a tabela e observei que havia um valor nulo. Calculei a mediana e defini o novo valor como a mediana.
 <img src="imagens/image-8.png"/>
 
 # Coluna Vento
-Na coluna vento a percebi que o erro era que existia números nas colunas, apos isso iniciei o tratamento para substituir os valores.
+Na coluna 'Vento', percebi que o erro era devido à presença de números nas células. Iniciei o tratamento substituindo esses valores.
 <img src="imagens/image-10.png"/>
 
 # Coluna Jogar
-E na coluna jogar as unicas alterações foram os numeros para sim.
-<img src="imagens/image-11.png"/>
+Na coluna 'Jogar', as únicas alterações foram substituir os números por 'sim'.
+<img src="imagens/image-11.png"/>"
