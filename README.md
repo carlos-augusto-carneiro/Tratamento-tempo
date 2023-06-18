@@ -21,7 +21,7 @@ Também usei a função boxplot da biblioteca statistics para pdoer ver a median
 Então usei a função loc para poder ver o valor que passava de 130. Em seguida calculei a mediana e usei a função loc novamente para poder definir o novo valor.
 <img src="imagens/image-6.png"/>
 
-# Coluna Umidade
+# Coluna Temperatura
 Para a coluna fiz os mesmos procedimentos. Verifiquei se tinha algum valor fora do padrão e usei a função loc para definir o valor de acordo com a mediana
 <img src="imagens/image-7.png"/>
 Depois analisei de novo a tabela e pode ver que o existia um valor null. Então calculei a mediana e definir o novo valor como a mediana.
